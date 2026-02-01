@@ -1,0 +1,150 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.page-header {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* ===== Variant 7: responsive image via @media ===== */
+.responsive-img {
+  width: 800px;
+  max-width: 100%;
+  display: block;
+  margin: 16px auto;
+  border: 2px solid #a00000;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .responsive-img { width: 600px; }
+}
+
+@media (max-width: 800px) {
+  .responsive-img { width: 400px; }
+}
+
+/* ===== Variant 7: centered red table + pseudo-classes ===== */
+.red-table {
+  border-collapse: collapse;
+  margin: 16px auto; /* центр по горизонталі */
+  font-family: Arial, sans-serif;
+}
+
+.red-table th,
+.red-table td {
+  border: 2px solid #a00000;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+.red-table thead th {
+  background-color: #a00000;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* псевдоклас: перший стовпець жирним */
+.red-table tbody td:first-child {
+  font-weight: 700;
+}
+
+/* псевдоклас: чергування рядків */
+.red-table tbody tr:nth-child(even) {
+  background-color: #fff2f2;
+}
+
+/* псевдоклас: наведення */
+.red-table tbody tr:hover {
+  background-color: #ffd6d6;
+}
+
+/* ===== Position + Float (додатково для вимог ЛР2) ===== */
+.note {
+  position: relative;
+  padding: 12px 40px 12px 12px;
+  background: #eef7ff;
+  border: 1px solid #cfe8ff;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.note-pin {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+}
+
+.float-img {
+  float: left;
+  width: 220px;
+  margin: 0 14px 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.clearfix { clear: both; }
+
+.to-top { margin-top: 14px; }
+
+.page-footer {
+  border-top: 1px solid #ddd;
+  padding: 14px 16px;
+  text-align: center;
+  background: #f5f5f5;
+}
+/* ===== Таблица як у прикладі (варіант 7) ===== */
+.red-table {
+  border-collapse: collapse;
+  margin: 20px auto;           /* центр по горизонталі */
+  font-family: Arial, sans-serif;
+}
+
+/* межі таблиці */
+.red-table th,
+.red-table td {
+  border: 2px solid #a00000;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+/* червона шапка */
+.red-table thead th {
+  background-color: #a00000;
+  color: white;
+  font-size: 18px;
+}
+
+/* перший стовпець (назви) */
+.red-table tbody td:first-child {
+  font-weight: bold;
+}
+
+/* псевдоклас :nth-child */
+.red-table tbody tr:nth-child(even) {
+  background-color: #fff2f2;
+}
+
+/* псевдоклас :hover */
+.red-table tbody tr:hover {
+  background-color: #ffd6d6;
+}
