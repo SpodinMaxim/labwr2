@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЛР2 CSS — Варіант 7</title>
+
+  <!-- (2) CSS у <style> -->
+  <style>
+    /* селектор тега */
+    header { padding: 16px; }
+
+    /* селектор id */
+    #top { scroll-behavior: smooth; }
+
+    /* селектор класу */
+    .muted { opacity: 0.85; }
+
+    nav a { text-decoration: none; }
+    nav a:hover { text-decoration: underline; } /* псевдоклас */
+  </style>
+
+  <!-- (3) зовнішній CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+    <h1 style="color:red">TEST</h1>
+  <header class="page-header">
+    <h1>Лабораторна робота №2 — CSS</h1>
+
+    <!-- (1) inline CSS -->
+    <p style="margin: 0; font-weight: 700;">Варіант 7</p>
+
+    <p class="muted">
+      Демонстрація підключення CSS (inline / style / external), селекторів, @media та псевдокласів.
+    </p>
+
+    <nav class="toc">
+      <strong>Зміст:</strong>
+      <a href="#responsive">@media зображення</a> ·
+      <a href="#table">Таблиця</a> ·
+      <a href="#posfloat">Position + Float</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="responsive" class="card">
+      <h2>1) Варіант 7 — адаптивне зображення (@media)</h2>
+      <p class="muted">
+        Вимога: при max-width: 1200px → 600px, при max-width: 800px → 400px.
+      </p>
+
+      <img class="responsive-img"
+           src="images/responsive.jpg"
+           alt="Адаптивне зображення (варіант 7)" />
+    </section>
+
+    <section id="table" class="card">
+      <h2>2) Варіант 7 — таблиця по центру + псевдокласи</h2>
+      <p class="muted">
+        Таблиця центрована, оформлена як у прикладі. Є псевдокласи :hover та :nth-child().
+      </p>
+
+      <table class="red-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>2017</th>
+            <th>2018</th>
+            <th>2019</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ІТех</td>
+            <td>93</td>
+            <td>97</td>
+            <td>98</td>
+          </tr>
+          <tr>
+            <td>КСх</td>
+            <td>91</td>
+            <td>98</td>
+            <td>97</td>
+          </tr>
+          <tr>
+            <td>СПО</td>
+            <td>96</td>
+            <td>94</td>
+            <td>97</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="to-top"><a href="#top">Повернутися вгору</a></p>
+    </section>
+
+    <section id="posfloat" class="card">
+      <h2>3) Додатково: Position + Float (для вимог ЛР2)</h2>
+
+      <div class="note">
+        Цей блок має <code>position: relative</code>, а значок справа зверху — <code>position: absolute</code>.
+        <span class="note-pin" aria-hidden="true">📌</span>
+      </div>
+
+      <img class="float-img" src="images/responsive.jpg" alt="Приклад float" />
+      <p>
+        Приклад <code>float</code>: зображення зліва, текст обтікає його справа. Це демонстрація вимоги про float.
+      </p>
+
+      <div class="clearfix"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <small>© 2026 — ЛР2 CSS, варіант 7</small>
+  </footer>
+</body>
+</html>
