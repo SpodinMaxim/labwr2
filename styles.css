@@ -24,7 +24,7 @@ body {
   margin: 16px 0;
 }
 
-/* ===== Variant 7: responsive image via @media ===== */
+
 .responsive-img {
   width: 800px;
   max-width: 100%;
@@ -42,10 +42,10 @@ body {
   .responsive-img { width: 400px; }
 }
 
-/* ===== Variant 7: centered red table + pseudo-classes ===== */
+
 .red-table {
   border-collapse: collapse;
-  margin: 16px auto; /* центр по горизонталі */
+  margin: 16px auto; 
   font-family: Arial, sans-serif;
 }
 
@@ -77,7 +77,7 @@ body {
   background-color: #ffd6d6;
 }
 
-/* ===== Position + Float (додатково для вимог ЛР2) ===== */
+/* ===== Position + Float  ===== */
 .note {
   position: relative;
   padding: 12px 40px 12px 12px;
@@ -112,10 +112,10 @@ body {
   text-align: center;
   background: #f5f5f5;
 }
-/* ===== Таблица як у прикладі (варіант 7) ===== */
+/* ===== Таблица  ===== */
 .red-table {
   border-collapse: collapse;
-  margin: 20px auto;           /* центр по горизонталі */
+  margin: 20px auto;           
   font-family: Arial, sans-serif;
 }
 
