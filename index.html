@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ЛР2 CSS — Варіант 7</title>
 
-  <!-- (2) CSS у <style> -->
+  
   <style>
-    /* селектор тега */
+   
     header { padding: 16px; }
 
-    /* селектор id */
+   
     #top { scroll-behavior: smooth; }
 
-    /* селектор класу */
+  
     .muted { opacity: 0.85; }
 
     nav a { text-decoration: none; }
     nav a:hover { text-decoration: underline; } /* псевдоклас */
   </style>
 
-  <!-- (3) зовнішній CSS -->
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -28,7 +28,7 @@
   <header class="page-header">
     <h1>Лабораторна робота №2 — CSS</h1>
 
-    <!-- (1) inline CSS -->
+    
     <p style="margin: 0; font-weight: 700;">Варіант 7</p>
 
   </header>
@@ -37,7 +37,7 @@
     <section id="responsive" class="card">
       <h2>1) Варіант 7 — адаптивне зображення</h2>
       <p class="muted">
-        Вимога: при max-width: 1200px → 600px, при max-width: 800px → 400px.
+        При max-width: 1200px → 600px, при max-width: 800px → 400px.
       </p>
 
       <img class="responsive-img"
@@ -47,9 +47,6 @@
 
     <section id="table" class="card">
       <h2>2) Варіант 7 — таблиця по центру + псевдокласи</h2>
-      <p class="muted">
-        Таблиця центрована, оформлена як у прикладі. Є псевдокласи :hover та :nth-child().
-      </p>
 
      <table class="red-table">
   <thead>
@@ -86,13 +83,13 @@
       <h2>3) Додатково: Position + Float </h2>
 
       <div class="note">
-        Цей блок має <code>position: relative</code>, а значок справа зверху — <code>position: absolute</code>.
+        Цей блок має position: relative, а значок справа зверху — position: absolute.
         <span class="note-pin" aria-hidden="true">📌</span>
       </div>
 
       <img class="float-img" src="images/responsive.jpg" alt="Приклад float" />
       <p>
-        Приклад <code>float</code>: зображення зліва, текст обтікає його справа. Це демонстрація вимоги про float.
+        Приклад float: зображення зліва, текст обтікає його справа.
       </p>
 
       <div class="clearfix"></div>
